@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -11,13 +11,13 @@
     <RootNamespace></RootNamespace>
     <AssemblyName>LongRunningOperations.Web</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileUpgradeFlags></FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation></UpgradeBackupLocation>
     <OptionExplicit>On</OptionExplicit>
     <OptionCompare>Binary</OptionCompare>
     <OptionStrict>Off</OptionStrict>
     <OptionInfer>On</OptionInfer>
-    <FileUpgradeFlags></FileUpgradeFlags>
-    <OldToolsVersion>3.5</OldToolsVersion>
-    <UpgradeBackupLocation></UpgradeBackupLocation>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,61 +47,68 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Web" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v12.2.Core">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Printing.v12.2.Core.dll</HintPath>
+    <Reference Include="DevExpress.Printing.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Data.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Data.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Images.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Images.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Web.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Web.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Web.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+      <Private>False</Private>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Persistent.Base.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.Base.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Persistent.BaseImpl.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxEditors.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Web.ASPxEditors.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Web.ASPxEditors.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxGridView.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Web.ASPxGridView.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Web.ASPxGridView.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.ASPxThemes.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Web.ASPxThemes.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Web.ASPxThemes.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Web.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Web.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Office.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2.Web">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.Web.dll</HintPath>
+    <Reference Include="DevExpress.Docs.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.RichEdit.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Web.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.1.Web">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System">
       <Private>False</Private>

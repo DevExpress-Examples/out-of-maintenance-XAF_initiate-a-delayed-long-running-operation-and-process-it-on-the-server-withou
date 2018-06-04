@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -44,69 +44,67 @@
     <ErrorReport>prompt</ErrorReport>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="DevExpress.ExpressApp.Xpo.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Xpo.v12.2.dll</HintPath>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.ExpressApp.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Utils.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Utils.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Utils.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.BonusSkins.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.BonusSkins.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.BonusSkins.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Printing.v12.2.Core">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Printing.v12.2.Core.dll</HintPath>
+    <Reference Include="DevExpress.Printing.v13.1.Core">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Data.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Data.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Data.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Images.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Images.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Images.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.ExpressApp.Win.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.ExpressApp.Win.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.ExpressApp.Win.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.Base.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Persistent.Base.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.Base.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Persistent.BaseImpl.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Persistent.BaseImpl.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Persistent.BaseImpl.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.Xpo.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.Xpo.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.Xpo.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraGrid.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.XtraGrid.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.XtraPrinting.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraBars.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.XtraBars.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.XtraGrid.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraEditors.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.XtraEditors.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.XtraBars.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraLayout.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.XtraLayout.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.XtraEditors.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
-    <Reference Include="DevExpress.XtraNavBar.v12.2">
-      <Private>True</Private>
-      <HintPath>c:\Projects\Workers\Worker8\TestFolder\Dlls\12.2.2\DevExpress.XtraNavBar.v12.2.dll</HintPath>
+    <Reference Include="DevExpress.XtraLayout.v13.1">
+      <SpecificVersion>False</SpecificVersion>
+    </Reference>
+    <Reference Include="DevExpress.XtraNavBar.v13.1">
+      <SpecificVersion>False</SpecificVersion>
     </Reference>
     <Reference Include="System">
       <Name>System</Name>
@@ -140,8 +138,9 @@
     <Compile Include="Program.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <EmbeddedResource Include="My Project\Resources.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="WinApplication.resx">
