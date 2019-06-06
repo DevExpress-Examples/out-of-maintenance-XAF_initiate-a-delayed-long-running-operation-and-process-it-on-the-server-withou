@@ -64,7 +64,7 @@ namespace ConsoleApplicationServer1
 
                 Timer timer = new Timer(10000);
                 timer.Elapsed += delegate(object sender, ElapsedEventArgs e) {
-                    IObjectSpace objectSpace = serverApplication.CreateObjectSpace();
+                    IObjectSpace objectSpace = serverApplication.CreateObjectSpace(typeof(ObjectForLongRunningOperations));
                     List<ObjectForLongRunningOperations> list = new List<ObjectForLongRunningOperations>(objectSpace.GetObjects<ObjectForLongRunningOperations>());
                     foreach(ObjectForLongRunningOperations obj in list) {
                         Console.WriteLine("Processing object '" + obj.ObjectToProcess.Name+ "'...");

@@ -15,7 +15,7 @@ namespace LongRunningOperations.Module.Controllers {
             StartProcessing();
         }
         public void StartProcessing() {
-            IObjectSpace os = Application.CreateObjectSpace();
+            IObjectSpace os = Application.CreateObjectSpace(typeof(ObjectForLongRunningOperations));
             ObjectForLongRunningOperations obj = os.CreateObject<ObjectForLongRunningOperations>();
             obj.ObjectToProcess = (Object1)os.GetObject(View.CurrentObject);
             if(obj.ObjectToProcess == null) {
