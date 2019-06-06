@@ -58,7 +58,7 @@ Namespace ConsoleApplicationServer1
 
                 Dim timer As New Timer(10000)
                 AddHandler timer.Elapsed, Sub(sender As Object, e As ElapsedEventArgs)
-                    Dim objectSpace As IObjectSpace = serverApplication.CreateObjectSpace()
+                    Dim objectSpace As IObjectSpace = serverApplication.CreateObjectSpace(GetType(ObjectForLongRunningOperations))
                     Dim list As New List(Of ObjectForLongRunningOperations)(objectSpace.GetObjects(Of ObjectForLongRunningOperations)())
                     For Each obj As ObjectForLongRunningOperations In list
                         Console.WriteLine("Processing object '" & obj.ObjectToProcess.Name & "'...")

@@ -17,7 +17,7 @@ Namespace LongRunningOperations.Module.Controllers
             StartProcessing()
         End Sub
         Public Sub StartProcessing()
-            Dim os As IObjectSpace = Application.CreateObjectSpace()
+            Dim os As IObjectSpace = Application.CreateObjectSpace(GetType(ObjectForLongRunningOperations))
             Dim obj As ObjectForLongRunningOperations = os.CreateObject(Of ObjectForLongRunningOperations)()
             obj.ObjectToProcess = CType(os.GetObject(View.CurrentObject), Object1)
             If obj.ObjectToProcess Is Nothing Then
