@@ -6,11 +6,11 @@ Imports System.Reflection
 
 
 Namespace LongRunningOperations.Module
-    Public NotInheritable Partial Class LongRunningOperationsModule
-        Inherits ModuleBase
+	Public NotInheritable Partial Class LongRunningOperationsModule
+		Inherits ModuleBase
 
-        Public Sub New()
-            InitializeComponent()
-        End Sub
-    End Class
+		Public Sub New()
+			InitializeComponent()
+		End Sub
+	End Class
 End Namespace

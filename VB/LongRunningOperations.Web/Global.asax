@@ -1,1 +1,1 @@
-﻿<%@ Application Language="vb" CodeBehind="Global.asax.vb" Inherits="LongRunningOperations.Web.Global"%>
+<%@ Application Language="C#" CodeBehind="Global.asax.cs" Inherits="LongRunningOperations.Web.Global"%>
