@@ -2,3 +2,13 @@ VB/* linguist-vendored
 scripts linguist-vendored
 *.css linguist-detectable=false
 *.aff linguist-detectable=false
+# Set the default behavior
+* text=auto eol=lf
+# Force Unix-style newlines
+*.sh text eol=lf
+# Force DOS-style newlines
+*.sln text eol=crlf
+*.*proj text eol=crlf
+*.vb text eol=crlf
+*.bat text eol=crlf
+*.cmd text eol=crlf
